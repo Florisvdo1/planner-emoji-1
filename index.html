@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Prevent user zooming and set initial scale -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Emoji Drag-and-Drop Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="header-container">
+      <div class="header-left">
+        <span id="live-time">--:--:--</span>
+      </div>
+      <div class="header-center">
+        <h1>Emoji Planner</h1>
+      </div>
+      <div class="header-right">
+        <button id="reset-button" class="icon-button" aria-label="Reset Planner">Reset</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="huiswerk-container">
+      <div class="huiswerk-placeholder">
+        <button id="huiswerk-button" class="huiswerk-button">
+          Huiswerk gedaan? Druk op de knop
+        </button>
+      </div>
+    </section>
+    <div id="planner">
+      <!-- Morning Section -->
+      <section id="morning-sector" class="sector">
+        <header class="sector-header">
+          <h2>Morning</h2>
+        </header>
+        <div class="emoji-placeholders">
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+        </div>
+        <input type="text" placeholder="Notes for Morning" class="sector-notes">
+      </section>
+      <!-- Midday Section -->
+      <section id="midday-sector" class="sector">
+        <header class="sector-header">
+          <h2>Midday</h2>
+        </header>
+        <div class="emoji-placeholders">
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+        </div>
+        <input type="text" placeholder="Notes for Midday" class="sector-notes">
+      </section>
+      <!-- Evening Section -->
+      <section id="evening-sector" class="sector">
+        <header class="sector-header">
+          <h2>Evening</h2>
+        </header>
+        <div class="emoji-placeholders">
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+          <div class="emoji-placeholder"></div>
+        </div>
+        <input type="text" placeholder="Notes for Evening" class="sector-notes">
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div id="emoji-deck">
+      <div class="emoji-grid" id="emoji-grid"></div>
+      <div class="emoji-navigation">
+        <button id="prev-category" aria-label="Previous Emoji Category">◀️</button>
+        <span id="category-name"></span>
+        <button id="next-category" aria-label="Next Emoji Category">▶️</button>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
